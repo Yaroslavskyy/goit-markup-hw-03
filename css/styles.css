@@ -26,7 +26,6 @@ a {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  outline: 2px solid tomato;
 }
 
 a.active {
@@ -46,12 +45,18 @@ li {
   list-style-type: none;
 }
 
+.container {
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .logo {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   font-family: "Raleway", sans-serif;
-  outline: 2px solid tomato;
 }
 
 .logo span {
@@ -60,6 +65,8 @@ li {
 
 .logo.header-logo {
   color: var(--color-black);
+  display: block;
+  margin-right: 93px;
 }
 
 address {
@@ -67,11 +74,13 @@ address {
 }
 
 .header-contact-link {
-color: var(--color-boulder);
+  color: var(--color-boulder);
 }
 
 .section-banner {
   background-color: var(--color-tuna);
+  text-align: center;
+  padding: 200px 0;
 }
 
 .page-title {
@@ -82,6 +91,8 @@ color: var(--color-boulder);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
+  max-width: 696px;
+  margin: 0 auto 30px;
 }
 
 .section-banner-btn {
@@ -95,17 +106,17 @@ color: var(--color-boulder);
   box-shadow: 0px 4px 4px var(--color-mine-shaftcolor-black-transparent);
   border-radius: 4px;
   border-color: var(--color-dodger-blue);
+  padding: 10px 32px;
 }
 
 .section-value-title {
-  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--color-mine-shaft);
 }
 
 .section-value-deskription {
-  line-height: 1, 71;
+  line-height: 1.71;
   color: var(--color-boulder);
 }
 
@@ -116,37 +127,46 @@ color: var(--color-boulder);
   text-align: center;
 }
 
-.nev-title {
+.team-section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 
-.photo  {
+.team-section {
   background: var(--color-whisper);
+  padding: 94px 0;
 }
 
-.photo-title {
+.team-item-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin: 0 0 10px;
 }
 
-.photo-deskription {
+.team-item-deskription {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--color-boulder);
+  margin: 0;
 }
 
 .logo.footer-logo {
   color: var(--color-white);
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
 .deskription.footer-address-item {
   color: var(--color-white);
+}
+
+.footer-address-item {
+  margin-bottom: 9px;
 }
 
 .footer-address-link {
@@ -193,48 +213,91 @@ color: var(--color-boulder);
 
 /*--Завдання 3 header--*/
 
-.header-nav-items {
-  display: flex;
-}
-
-
-.header-contacts-item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .header-contacts-link {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--color-boulder);
 }
 
-.header-nav-items li {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: 50px;
+.header {
+  padding: 24px 0 25px;
+  border-bottom: 1px solid #ececec;
 }
 
+.header-container,
+.header-nav,
+.header-nav-items,
 .header-contact-items {
   display: flex;
 }
- 
-.container-header-nav {
+
+.header-nav-items,
+.header-container {
+  align-items: center;
+}
+
+.header-nav {
+  margin-right: auto;
+}
+
+.header-nav-item:not(:last-child),
+.header-contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.footer {
+  padding: 60px 0;
+}
+
+.section-value-item {
+  width: calc((100% - 90px) / 4);
+  
+}
+
+.section-value-items {
   display: flex;
-  justify-content: space-around;
-  background-color: aqua;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: auto;
+  padding: 94px 0;
 }
 
 
-
-/*-- портфоліо--*/
-
-.project-section-items {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 30px;
-  row-gap: 50px;
+.section-value-item:not(:last-child) {
+  margin-right: 30px;
 }
+
+.section-title {
+  margin: 0 0 50px;
+}
+
+.buisineіs-section-items {
+  display: flex;
+  padding-bottom: 94px;
+
+}
+
+.buisineіs-section-item {
+  width: calc((100% - 60) / 3);
+}
+
+.buisineіs-section-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-section-item {
+  background: var(--color-white);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+width: calc((100% - 90px) / 4);
+}
+
+.team-section-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-section-items {
+  display: flex;
+}
+
+.team-item-info {
+  padding: 30px 0;
+}
+

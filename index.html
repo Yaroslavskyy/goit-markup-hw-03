@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container-header-nav">
+      <div class="container header-container">
       <nav class="header-nav">
         <a class="header-logo logo" href="./index.html"
           ><span>Web</span>Studio</a
@@ -47,30 +47,31 @@
           Замовити послугу
         </button>
       </section>
-      <section class="section-value">
+      <section class="section-value container">
+        <h2 hidden>характеристики</h2>
         <ul class="section-value-items">
           <li class="section-value-item">
-            <h2 class="section-value-title">УВАГА ДО ДЕТАЛЕЙ</h2>
+            <h3 class="section-value-title">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="section-value-deskription">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
           <li class="section-value-item">
-            <h2 class="section-value-title">ПУНКТУАЛЬНІСТЬ</h2>
+            <h3 class="section-value-title">ПУНКТУАЛЬНІСТЬ</h3>
             <p class="section-value-deskription">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
           <li class="section-value-item">
-            <h2 class="section-value-title">ПЛАНУВАННЯ</h2>
+            <h3 class="section-value-title">ПЛАНУВАННЯ</h3>
             <p class="section-value-deskription">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
           <li class="section-value-item">
-            <h2 class="section-value-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+            <h3 class="section-value-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
             <p class="section-value-deskription">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
@@ -78,8 +79,8 @@
           </li>
         </ul>
       </section>
-      <section class="buisineіs-section">
-        <h2 class="buisineіs-section-title">Чим ми займаємося</h2>
+      <section class="buisineіs-section container">
+        <h2 class="buisineіs-section-title section-title">Чим ми займаємося</h2>
         <ul class="buisineіs-section-items">
           <li class="buisineіs-section-item">
             <img
@@ -107,53 +108,64 @@
           </li>
         </ul>
       </section>
-      <section class="photo">
-        <h2 class="nev-title">Наша команда</h2>
-        <ul class="photo-items">
-          <li class="photo-item">
+      <section class="team-section">
+        <div class="container">
+        <h2 class="team-section-title section-title">Наша команда</h2>
+        <ul class="team-section-items">
+          <li class="team-section-item">
             <img
               src="images/home-page/img4.jpg"
               alt="photo"
               width="270"
               height="260"
             />
-            <h3 class="photo-title">Ігор Дем'яненко</h3>
-            <p class="photo-deskription">Product Designer</p>
+            <div class="team-item-info">
+            <h3 class="team-item-title">Ігор Дем'яненко</h3>
+            <p class="team-item-deskription">Product Designer</p>
+            </div>
           </li>
-          <li class="photo-item">
+          <li class="team-section-item">
             <img
               src="images/home-page/img5.jpg"
               alt="photo"
               width="270"
               height="260"
             />
-            <h3 class="photo-title">Ольга Рєпіна</h3>
-            <p class="photo-deskription">Frontend Developer</p>
+            <div class="team-item-info">
+            <h3 class="team-item-title">Ольга Рєпіна</h3>
+            <p class="team-item-deskription">Frontend Developer</p>
+          </div>
           </li>
-          <li class="photo-item">
+          <li class="team-section-item">
             <img
               src="images/home-page/img6.jpg"
               alt="photo"
               width="270"
               height="260"
             />
-            <h3 class="photo-title">Микола Тарасов</h3>
-            <p class="photo-deskription">Marketing</p>
+            <div class="team-item-info">
+            <h3 class="team-item-title">Микола Тарасов</h3>
+            <p class="team-item-deskription">Marketing</p>
+          </div>
           </li>
-          <li class="photo-item">
+          <li class="team-section-item">
             <img
               src="images/home-page/img7.jpg"
               alt="photo"
               width="270"
               height="260"
             />
-            <h3 class="photo-title">Михайло Єрмаков</h3>
-            <p class="photo-deskription">UI Designer</p>
+            <div class="team-item-info">
+            <h3 class="team-item-title">Михайло Єрмаков</h3>
+            <p class="team-item-deskription">UI Designer</p>
+          </div>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer class="footer">
+      <div class="container">
       <a class="footer-logo logo" href="./index.html"><span>Web</span>Studio</a>
       <address class="footer-address">
         <ul class="footer-address-items">
@@ -172,6 +184,7 @@
           </li>
         </ul>
       </address>
+    </div>
     </footer>
   </body>
 </html>
