@@ -11,6 +11,7 @@
   --color-wild-sand: #f5f5f5;
   --color-whisper: #f5f4fa;
   --color-black-transparent: rgba(0, 0, 0, 0.15);
+  --color-gallery: #eeeeee;
 }
 
 body {
@@ -32,7 +33,8 @@ a.active {
   color: var(--color-dodger-blue);
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: var(--color-dodger-blue);
 }
 
@@ -91,8 +93,7 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
-  max-width: 696px;
-  margin: 0 auto 30px;
+  margin: 0 0 30px;
 }
 
 .section-banner-btn {
@@ -103,7 +104,6 @@ address {
   letter-spacing: 0.06em;
   color: var(--color-white);
   background: var(--color-dodger-blue);
-  box-shadow: 0px 4px 4px var(--color-mine-shaftcolor-black-transparent);
   border-radius: 4px;
   border-color: var(--color-dodger-blue);
   padding: 10px 32px;
@@ -113,11 +113,13 @@ address {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--color-mine-shaft);
+  margin: 0 0 10px;
 }
 
 .section-value-deskription {
   line-height: 1.71;
   color: var(--color-boulder);
+  margin: 0;
 }
 
 .buisineіs-section-title {
@@ -191,7 +193,8 @@ address {
   border: none;
 }
 
-.project-button-action:hover {
+.project-button-action:hover,
+.project-button-action:focus {
   color: var(--color-white);
   background: var(--color-dodger-blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -199,18 +202,21 @@ address {
 }
 
 .project-section-title {
+  color: var(--color-mine-shaft);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin: 20px 24px 4px 24px;
 }
 
 .project-section-subtitle {
   font-size: 16px;
   line-height: 1.88;
   color: var(--color-boulder);
-  margin: 0 24px 20px 24px;
+}
+
+.project-section-info {
+  padding: 20px 24px;
 }
 
 /*--Завдання 3 header--*/
@@ -302,17 +308,22 @@ address {
 }
 
 /*--Завдання три портфоліо--*/
+.project {
+  padding: 94px 15px;
+}
 
 .project-button-items {
   display: flex;
   justify-content: center;
-  margin: 94px 0 50px;
+  margin: 0 0 50px;
 }
 
 .project-button-item:not(:last-child) {
   margin-right: 8px;
 }
+
 .project-button-action {
+  font-family: "Roboto", sans-serif;
   padding: 6px 22px;
 }
 
@@ -323,8 +334,8 @@ address {
 .project-section-items {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
+
 .project-section-item:not(:nth-child(3n + 3)) {
   margin-right: 30px;
 }
@@ -335,6 +346,6 @@ address {
 
 .project-section-item {
   width: calc((100% - 60px) / 3);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--color-gallery);
+  box-sizing: border-box;
 }
